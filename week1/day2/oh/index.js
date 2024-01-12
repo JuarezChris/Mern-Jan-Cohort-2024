@@ -1,4 +1,4 @@
-console.log("Hello")
+
 
 const palidrome = (event, id) => {
     event.preventDefault()
@@ -6,7 +6,7 @@ const palidrome = (event, id) => {
     return word.split("").reverse().join("") == word
 }
 
-function submit(e){
+const handleSubmit = (e, word) => {
     e.preventDefault()
-    console.log("hello")
+    console.log(document.getElementById(word).value)
 }
