@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import Sub from './components/Sub'
+import MainContent from './components/MainContent'
 import './App.css'
 
 function App() {
@@ -11,9 +11,7 @@ function App() {
 
   return (
     <>
-      <div>
-        <h2>This is my first basic vite project!</h2>
-      </div>
+      <MainContent/>
     </>
   )
 }
