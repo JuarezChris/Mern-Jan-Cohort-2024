@@ -4,10 +4,11 @@ import Result from './components/Result'
 import './App.css'
 
 function App() {
+  const [words, setWords] = useState([])
 
   return (
     <>
-      <Form />
+      <Form words={words} setWords={setWords}/>
       <Result />
     </>
   )
