@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Form words={words} setWords={setWords}/>
-      <Result />
+      <Result words={words} />
     </>
   )
 }

@@ -5,8 +5,23 @@ const Form = (props) => {
   // We had  {} over our useState
   const [word, setWord] = useState("")
   // console.log(word)
+
   const submitHandler = (e) => {
     e.preventDefault()
+
+    // if(pali(word)){
+    //   setWords([...words, word.toLowerCase()])
+    // }
+    // else{
+    //   alert("Not a palidrome please try again!!")
+    // }
+    setWord("")
+    
+  }
+
+  const pali = (testWord) => {
+    // console.log(testWord.toLowerCase().split("").reverse().join("") == testWord.toLowerCase())
+    return testWord.toLowerCase().split("").reverse().join("") == testWord.toLowerCase()
   }
   
 
