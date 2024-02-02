@@ -6,6 +6,31 @@ function App() {
   // const [clicked, setClicked] = useState(false)
   const [pokeData, setPokeData] = useState([])
 
+  // useEffect(() => {
+  //   axios
+  //     .get('https://pokeapi.co/api/v2/pokemon?limit=151&offset=0')
+  //     .then((response) => {
+  //       const pokeList = response.data.results;
+  //       const promiseList = pokeList.map((pokemon) =>
+  //         axios.get(pokemon.url).then((response) => ({
+  //           name: pokemon.name,
+  //           image: response.data.sprites['front_shiny'],
+  //         }))
+  //       );
+  
+  //       Promise.all(promiseList)
+  //         .then((pokeDetails) => {
+  //           setPokeData(pokeDetails);
+  //         })
+  //         .catch((error) => {
+  //           console.log(error);
+  //         });
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
+  // }, []);
+
   useEffect( () => {
     console.log("Mounted")
     axios.get("https://pokeapi.co/api/v2/pokemon?limit=20&offset=0")
@@ -28,7 +53,7 @@ function App() {
             .catch( error => {
               console.log(error)
             })
-          
+            
         })
         console.log(finalPokeList)
       })
