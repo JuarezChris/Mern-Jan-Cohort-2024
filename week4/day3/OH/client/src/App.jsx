@@ -18,12 +18,11 @@ function App() {
       content: "Happy St Patricks Day!!"
     }
   ])
-  const [isActive, setIsActive] = useState("")
+  const [isActive, setIsActive] = useState({})
   
-
   return (
     <>
-      <Holidays holidays={holidays} setHolidays={setHolidays}/>
+      <Holidays holidays={holidays} setHolidays={setHolidays} isActive={isActive} setIsActive={setIsActive}/>
       <Display holidays={holidays}/>
     </>
   )
