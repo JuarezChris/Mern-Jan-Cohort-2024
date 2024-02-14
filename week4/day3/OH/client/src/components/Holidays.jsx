@@ -8,6 +8,7 @@ const Holidays = (props) => {
       console.log(index)
       const activeHoliday = holidays.filter( (item, idx) => index != idx ? null : item)
       console.log(activeHoliday)
+      setIsActive(activeHoliday[0])
     }
 
   return (
