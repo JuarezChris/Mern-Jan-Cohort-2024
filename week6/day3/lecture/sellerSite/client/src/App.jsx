@@ -12,8 +12,8 @@ function App() {
 
   return (
     <>
-      <BrowserRouter> 
-          <Header />
+      <BrowserRouter>
+        <Header />
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/create" element={<Create/>} />
